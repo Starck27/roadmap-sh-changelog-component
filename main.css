@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.changelog {
+  display: flex;
+  justify-content: center;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+.changelog-date {
+  color: cadetblue;
+}
+
+.changelog-dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  margin: 1rem;
+}
+
+.changelog-dot::before {
+  content: "";
+  position: absolute;
+  width: 0.1rem;
+  height: 5rem;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
